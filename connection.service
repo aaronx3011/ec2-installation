@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/connections.sh
+ExecStart=/usr/bin/connections.sh
 User=ubuntu
 Restart=always
 RestartSec=3
