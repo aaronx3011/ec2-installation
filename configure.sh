@@ -23,6 +23,8 @@ chmod +x ./connection.sh
 sudo mv ./connection.sh /usr/bin/connection.sh
 
 # Services
+sudo mv ./observer.service /etc/systemd/system/observer.service
+sudo mv ./connection.service /etc/systemd/system/connection.service
 sudo systemctl daemon-reload
 sudo systemctl enable observer.service
 sudo systemctl enable connection.service
