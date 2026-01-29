@@ -1,0 +1,14 @@
+[Unit]
+Description=This services is on charge of uploading the files created by ffmpeg to the bucket
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/observer.sh
+User=ubuntu
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+
